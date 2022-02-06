@@ -1,0 +1,28 @@
+INSERT into Admin values ('AD_00','Primo@atos.net','abcdefg');
+
+INSERT into Users values ('U001','Harris','harris@atos.net','12345','22-JAN-2022','BINAN_LAGUNA','09151234567');
+INSERT into Users values ('U002','Nini','nini@atos.net','67890','22-JAN-2022','STA.ROSA_LAGUNA','09060987654');
+INSERT into Users values ('U003','Melchie','melchie@atos.net','69696','1-JAN-2022','SAN PEDRO_LAGUNA','09051357986');
+
+INSERT into Cart values ('CRT_01','U003');
+INSERT into Cart values ('CRT_02','U002');
+INSERT into Cart values ('CRT_03','U001');
+
+INSERT into Cart_Items values ('CRT-01','CRT_01','U003','PRD_01','9');
+INSERT into Cart_Items values ('CRT-02','CRT_02','U002','PRD_02','5');
+
+INSERT into Category values ('CT-1','Car')
+INSERT into Category values ('CT-2','Perfume')
+INSERT into Category values ('CT-3','Bike');
+
+INSERT into Product values ('PRD_01','Honda','CT-1','2000000','honda.png','20');
+INSERT into Product values ('PRD_02','Hugo','CT-2','2500','hugo.png','150');
+INSERT into Product values ('PRD_03','Race','CT-3','25000','race.png','50');
+
+INSERT into Coupon values ('CPN_01','HON_10','0.1','31-DEC-2022');
+INSERT into Coupon values ('CPN_02','HUG_5','0.05','22-JUN-2022');
+INSERT into Coupon values ('CPN_03','RACE_9','0.09','17-SEP-2022');
+
+INSERT into Orders values ('ODR_001','CRT_01','U001','31-JAN-2022','08-FEB-2022','CPN_01','1800000','DEBIT');
+INSERT into Orders values ('ODR_002','CRT_01','U001','01-FEB-2022','09-FEB-2022','CPN_01','7500','COD');
+INSERT into Orders values ('ODR_003','CRT_02','U002','27-JAN-2022','04-FEB-2022','CPN_02','50000','WALLET');
